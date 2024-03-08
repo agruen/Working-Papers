@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This is a simple bash script to do a few things related to upgrading [Paperless-ngx](https://docs.paperless-ngx.com) if you're using the official docker containers.  It should help you 1) Backup your data 2) Stop your current containers 3) Download the latest version 4) Test-run that version 5) Run the new version in daemon mode (if all went well) and 6) purge any docker containers not currently in use (so you don't keep a huge number of old versions of things lying around).
+
 # Define a file to capture docker compose output
 DOCKER_OUTPUT_FILE="docker_output.log"
 
